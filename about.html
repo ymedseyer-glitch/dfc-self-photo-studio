@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About | DFC Self Photo Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">DFC Self Photo Studio</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <h1>About DFC Self Photo Studio</h1>
+      <p>Where everyday moments become frame-worthy portraits.</p>
+    </section>
+
+    <section class="two-column">
+      <div>
+        <h2>Our Story</h2>
+        <p>
+          DFC Self Photo Studio was created for people who love capturing memories
+          in a fun, relaxed, and private environment. No pressure, no awkwardness—
+          just you, your favorite people, and a camera.
+        </p>
+        <p>
+          We combine professional studio equipment with an easy self-shoot experience,
+          so you stay in control while still getting high-quality results.
+        </p>
+      </div>
+      <div>
+        <h2>What We Believe</h2>
+        <ul class="styled-list">
+          <li>Everyone deserves photos they feel confident in.</li>
+          <li>Sessions should be fun, not stressful.</li>
+          <li>Great lighting and simple guidance go a long way.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> DFC Self Photo Studio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

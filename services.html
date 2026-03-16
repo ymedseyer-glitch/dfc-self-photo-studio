@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Services | DFC Self Photo Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">DFC Self Photo Studio</div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html" class="active">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-header">
+      <h1>Studio Packages</h1>
+      <p>Choose the session that fits your moment.</p>
+    </section>
+
+    <section class="cards-grid">
+      <article class="card">
+        <h2>Solo Session</h2>
+        <p>Perfect for profile photos, portraits, and personal branding.</p>
+        <ul class="styled-list">
+          <li>30-minute private booth</li>
+          <li>Multiple backdrops</li>
+          <li>Digital copies of selected shots</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Couple & Friends</h2>
+        <p>Capture your connection with someone special or your best friends.</p>
+        <ul class="styled-list">
+          <li>45-minute session</li>
+          <li>Up to 4 people</li>
+          <li>Group and individual shots</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Family & Groups</h2>
+        <p>For families, celebrations, and special occasions.</p>
+        <ul class="styled-list">
+          <li>60-minute session</li>
+          <li>Up to 6–8 people</li>
+          <li>Group, pair, and solo combinations</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="note-section">
+      <p><strong>Note:</strong> Pricing, promotions, and availability can be customized based on your actual Facebook details.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> DFC Self Photo Studio. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
