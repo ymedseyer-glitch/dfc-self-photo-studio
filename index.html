@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DFC Self Photo Studio | Home</title>
+  <title>DFC Self-Photo Studio | Click. Create. Celebrate.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
- <header class="site-header">
+
+<header class="site-header">
   <a href="index.html" class="dfc-logo">
     <img src="assets/images/logo.png" alt="DFC Self-Photo Studio Logo">
   </a>
@@ -16,51 +18,74 @@
     <a href="index.html" class="active">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
     <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
   </nav>
 </header>
 
-  <main>
-    <section class="hero">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Click. Create. Celebrate.</h1>
-    <p>DFC Self-Photo Studio in Poblacion, San Rafael, Bulacan—your space for fun, creative, and memorable self-shoot sessions.</p>
+    <p>Your self‑photo studio in Poblacion, San Rafael — where every moment becomes a memory.</p>
     <a href="contact.html" class="btn-primary">Book a Session</a>
   </div>
 </section>
 
-    <section class="features">
-  <h2>Capture Every Milestone</h2>
+<!-- FEATURES -->
+<section class="section light">
+  <h2 class="section-title">Capture Every Moment</h2>
+  <p class="section-subtitle">From solo portraits to family celebrations — we’ve got the perfect setup for you.</p>
+
   <div class="feature-grid">
     <div class="feature-card">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
       <h3>Solo & Couple</h3>
-      <p>Express yourself or celebrate your story with studio-quality self-portraits.</p>
+      <p>Express yourself with clean, modern studio lighting.</p>
     </div>
+
     <div class="feature-card">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
       <h3>Barkada & Family</h3>
-      <p>Bring the whole gang—perfect for barkada, family, and group memories.</p>
+      <p>Fun, candid, and memorable group sessions.</p>
     </div>
+
     <div class="feature-card">
-      <h3>Life Events</h3>
-      <p>Birthday, debut, prenup, maternity, graduation, anniversary—click, create, and celebrate every moment.</p>
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+      <h3>Special Occasions</h3>
+      <p>Birthday, debut, prenup, maternity, graduation, and more.</p>
     </div>
   </div>
 </section>
 
-    <section class="cta-strip">
-      <h2>Ready to create memories?</h2>
-      <p>Perfect for friends, couples, families, and solo shoots.</p>
-      <a href="contact.html" class="btn-secondary">Check Availability</a>
-    </section>
-  </main>
+<!-- GALLERY PREVIEW -->
+<section class="section peach">
+  <h2 class="section-title">Studio Vibes</h2>
+  <p class="section-subtitle">A glimpse of the moments created at DFC.</p>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> DFC Self Photo Studio. All rights reserved.</p>
-  </footer>
+  <div class="gallery-preview">
+    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+    <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+  </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <a href="gallery.html" class="btn-secondary">View Full Gallery</a>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Create Beautiful Memories?</h2>
+  <a href="contact.html" class="btn-primary">Book Your Session</a>
+</section>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> DFC Self-Photo Studio. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
