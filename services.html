@@ -2,74 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Services | DFC Self Photo Studio</title>
+  <title>Services | DFC Self-Photo Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
-  <header class="site-header">
+
+<header class="site-header">
   <a href="index.html" class="dfc-logo">
     <img src="assets/images/logo.png" alt="DFC Self-Photo Studio Logo">
   </a>
-
   <nav class="nav">
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="about.html">About</a>
+    <a href="services.html" class="active">Services</a>
     <a href="contact.html">Contact</a>
-    <a href="services.html">Services</a>
   </nav>
 </header>
 
-  <main class="page">
-    <section class="page-header">
-      <h1>Studio Packages</h1>
-      <p>Choose the session that fits your moment.</p>
-    </section>
-
-    <section class="cards-grid">
-  <article class="card">
-    <h2>Solo & Couple</h2>
-    <p>Perfect for portraits, profile photos, and couple shoots.</p>
-    <ul class="styled-list">
-      <li>Private self-photo session</li>
-      <li>Multiple poses and backdrops</li>
-      <li>Digital copies of selected shots</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <h2>Barkada & Family</h2>
-    <p>For barkada, family, and group memories.</p>
-    <ul class="styled-list">
-      <li>Group-friendly setup</li>
-      <li>Fun, candid, and posed shots</li>
-      <li>Perfect for bonding and celebrations</li>
-    </ul>
-  </article>
-
-  <article class="card">
-    <h2>Special Occasions</h2>
-    <p>Birthday, debut, prenup, maternity, graduation, anniversary, and more.</p>
-    <ul class="styled-list">
-      <li>Styled sessions for your milestone</li>
-      <li>Highlight shots you’ll want to frame</li>
-      <li>Great for invites, posts, and keepsakes</li>
-    </ul>
-  </article>
+<section class="hero small-hero" style="background-image:url('https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Our Services</h1>
+    <p>Choose the session that fits your moment.</p>
+  </div>
 </section>
 
-    <section class="note-section">
-      <p><strong>Note:</strong> Pricing, promotions, and availability can be customized based on your actual Facebook details.</p>
-    </section>
-  </main>
+<section class="section light">
+  <div class="feature-grid">
+    <div class="feature-card">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+      <h3>Solo & Couple</h3>
+      <p>Perfect for portraits, profile photos, and couple shoots.</p>
+    </div>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> DFC Self Photo Studio. All rights reserved.</p>
-  </footer>
+    <div class="feature-card">
+      <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="">
+      <h3>Barkada & Family</h3>
+      <p>Fun, candid, and memorable group sessions.</p>
+    </div>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+    <div class="feature-card">
+      <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+      <h3>Special Occasions</h3>
+      <p>Birthday, debut, prenup, maternity, graduation, and more.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> DFC Self-Photo Studio. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>

@@ -2,67 +2,63 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact | DFC Self Photo Studio</title>
+  <title>Contact | DFC Self-Photo Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
+
 <body>
- <header class="site-header">
+
+<header class="site-header">
   <a href="index.html" class="dfc-logo">
     <img src="assets/images/logo.png" alt="DFC Self-Photo Studio Logo">
   </a>
-
   <nav class="nav">
-    <a href="index.html" class="active">Home</a>
+    <a href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
     <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
 </header>
 
-  <main class="page">
-    <section class="page-header">
-      <h1>Contact & Booking</h1>
-      <p>Reach out to book a session or ask a question.</p>
-    </section>
+<section class="hero small-hero" style="background-image:url('https://images.unsplash.com/photo-1517841905240-472988babdf9');">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>We’d love to help you create beautiful memories.</p>
+  </div>
+</section>
 
-    <section class="two-column">
-      <div>
-        <h2>Contact Details</h2>
-<p><strong>Address:</strong> Poblacion, San Rafael, Bulacan, Philippines</p>
-<p><strong>Phone:</strong> [Insert phone number from Facebook]</p>
-<p><strong>Email:</strong> [Insert email if available]</p>
-<p><strong>Facebook:</strong> DFC Self-Photo Studio</p>
-      </div>
-      <div>
-        <h2>Send a Message</h2>
-        <form class="contact-form">
-          <label>
-            Name
-            <input type="text" name="name" required>
-          </label>
-          <label>
-            Email
-            <input type="email" name="email" required>
-          </label>
-          <label>
-            Message
-            <textarea name="message" rows="4" required></textarea>
-          </label>
-          <button type="submit" class="btn-primary">Submit</button>
-        </form>
-        <p class="form-note">Form is static for now—can be wired to a backend or form service later.</p>
-      </div>
-    </section>
-  </main>
+<section class="section light">
+  <div class="two-column">
+    <div>
+      <h2>Get in Touch</h2>
+      <p><strong>Address:</strong> Poblacion, San Rafael, Bulacan</p>
+      <p><strong>Phone:</strong> [Insert number]</p>
+      <p><strong>Email:</strong> [Insert email]</p>
+      <p><strong>Facebook:</strong> DFC Self-Photo Studio</p>
+    </div>
 
-  <footer class="site-footer">
-    <p>© <span id="year"></span> DFC Self Photo Studio. All rights reserved.</p>
-  </footer>
+    <div>
+      <h2>Send a Message</h2>
+      <form class="contact-form">
+        <label>Name<input type="text" required></label>
+        <label>Email<input type="email" required></label>
+        <label>Message<textarea rows="4" required></textarea></label>
+        <button class="btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+<footer class="site-footer">
+  <p>© <span id="year"></span> DFC Self-Photo Studio. All rights reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 </body>
 </html>
