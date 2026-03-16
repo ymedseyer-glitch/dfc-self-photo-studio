@@ -1,17 +1,17 @@
 :root {
-  --bg: #05060a;
-  --bg-alt: #10121a;
-  --accent: #f5b400;
-  --accent-soft: rgba(245, 180, 0, 0.12);
-  --text: #f5f5f5;
-  --muted: #a0a4b8;
-  --border: #262938;
+  --bg: #ffffff;
+  --bg-alt: #f7f7f7;
+  --accent: #b36b00; /* warm brown to match your logo */
+  --accent-soft: rgba(179, 107, 0, 0.12);
+  --text: #222222;
+  --muted: #555555;
+  --border: #dddddd;
   --danger: #ff4b6a;
   --radius-lg: 18px;
   --radius-md: 12px;
   --radius-sm: 8px;
-  --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
-  --shadow-subtle: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --shadow-soft: 0 8px 20px rgba(0, 0, 0, 0.08);
+  --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.06);
   --max-width: 1100px;
   --transition-fast: 0.18s ease-out;
   --transition-med: 0.25s ease-out;
