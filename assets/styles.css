@@ -34,7 +34,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.2rem 2rem; /* increased padding */
+  padding: 1.2rem 2rem;
   background: var(--white);
   border-bottom: 1px solid #eee;
   position: sticky;
@@ -43,10 +43,11 @@ img {
 }
 
 .dfc-logo img {
-  height: 130px;   /* Increase size */
+  height: 130px;
   width: auto;
   display: block;
 }
+
 .dfc-logo {
   display: flex;
   align-items: center;
@@ -62,7 +63,7 @@ img {
 
 @media (max-width: 768px) {
   .dfc-logo img {
-    height: 90px; /* slightly smaller on mobile */
+    height: 90px;
   }
 
   .site-header {
@@ -83,11 +84,15 @@ img {
 }
 
 /* ------------------------------
-   HERO
+   HERO (FIXED)
 ------------------------------ */
 .hero {
   height: 90vh;
-  background: url("assets/images/dfchero.png") center/cover no-repeat;
+  width: 100%;
+  background-image: url("assets/images/dfchero.png");
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
   position: relative;
   display: flex;
   align-items: center;
