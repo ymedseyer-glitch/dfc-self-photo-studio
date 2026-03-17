@@ -194,6 +194,29 @@ img {
   text-align: left;
 }
 
+.feature-card img {
+  height: 260px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.feature-card {
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.feature-card img {
+  transition: transform 0.4s ease;
+}
+
+.feature-card:hover img {
+  transform: scale(1.08);
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
 .feature-card h3 {
   margin-top: 1rem;
 }
