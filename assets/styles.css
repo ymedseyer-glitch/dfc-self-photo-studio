@@ -239,10 +239,11 @@ img {
 
 .gallery-preview img {
   width: 100%;
-  max-width: 240px; /* controls size */
-  height: 180px; /* adjust height here */
-  object-fit: cover; /* keeps photos clean */
+  max-width: 220px;
+  height: 160px;
+  object-fit: cover;
   border-radius: var(--radius);
+  cursor: pointer;
   transition: transform 0.3s ease;
 }
 
