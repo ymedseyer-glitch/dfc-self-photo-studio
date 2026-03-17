@@ -226,9 +226,21 @@ img {
 ------------------------------ */
 .gallery-preview {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1rem;
-  margin-bottom: 2rem;
+  justify-items: center;
+}
+
+.gallery-preview img {
+  width: 70%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  transition: transform 0.3s ease;
+}
+
+.gallery-preview img:hover {
+  transform: scale(1.05);
 }
 
 /* ------------------------------
