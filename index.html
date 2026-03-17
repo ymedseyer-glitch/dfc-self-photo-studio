@@ -114,7 +114,7 @@
   const closeBtn = document.querySelector(".close-btn");
 
   // Make BOTH feature images AND studio vibe images clickable
-  document.querySelectorAll(".feature-card img, .gallery-preview img").forEach(img => {
+  document.querySelectorAll(".feature-card img, .gallery-preview img, .gallery-grid img").forEach(img => {
     img.addEventListener("click", () => {
       lightbox.style.display = "flex";
       lightboxImg.src = img.src;

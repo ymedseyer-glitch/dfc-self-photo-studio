@@ -252,6 +252,48 @@ img {
 }
 
 /* ------------------------------
+   GALLERY PAGE MASONRY GRID
+------------------------------ */
+.gallery-grid {
+  columns: 4;
+  column-gap: 1.2rem;
+  padding: 1rem 0;
+}
+
+.gallery-grid img {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  border-radius: var(--radius);
+  display: block;
+  break-inside: avoid;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .gallery-grid {
+    columns: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    columns: 1;
+  }
+}
+
+/* ------------------------------
    CTA
 ------------------------------ */
 .cta {
