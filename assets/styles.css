@@ -87,22 +87,24 @@ img {
    HERO (FIXED)
 ------------------------------ */
 .hero {
-  height: 90vh;
+  min-height: 90vh;
   width: 100%;
   background-image: url("assets/images/dfchero.png");
-  background-size: cover !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.35);
+  pointer-events: none;
 }
 
 .hero-content {
