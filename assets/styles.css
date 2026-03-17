@@ -167,6 +167,11 @@ img {
   background: var(--peach);
 }
 
+.section.peach .btn-secondary {
+  margin-top: 1.5rem;
+  display: inline-block;
+}
+
 .section-title {
   font-size: 2rem;
   margin-bottom: 0.5rem;
@@ -226,15 +231,17 @@ img {
 ------------------------------ */
 .gallery-preview {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
   justify-items: center;
+  margin-bottom: 2.5rem; /* pushes button down */
 }
 
 .gallery-preview img {
-  width: 70%;
-  height: 180px;
-  object-fit: cover;
+  width: 100%;
+  max-width: 240px; /* controls size */
+  height: 180px; /* adjust height here */
+  object-fit: cover; /* keeps photos clean */
   border-radius: var(--radius);
   transition: transform 0.3s ease;
 }
