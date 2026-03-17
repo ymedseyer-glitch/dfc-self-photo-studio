@@ -14,12 +14,20 @@
     <img src="assets/images/logo.png" alt="DFC Self-Photo Studio Logo">
   </a>
 
-  <nav class="nav">
-    <a href="index.html" class="active">Home</a>
+  <!-- HAMBURGER BUTTON -->
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" id="nav-menu">
+    <a href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
-    <a href="contact.html">Contact</a>
+    <a href="contact.html" class="active">Contact</a>
   </nav>
 </header>
 
@@ -129,6 +137,16 @@
     if (e.target === lightbox) {
       lightbox.style.display = "none";
     }
+  });
+</script>
+
+<script>
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.getElementById("nav-menu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
   });
 </script>
 
