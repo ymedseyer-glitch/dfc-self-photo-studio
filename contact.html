@@ -61,12 +61,25 @@
 
     <div>
       <h2>Send a Message</h2>
-      <form class="contact-form">
-        <label>Name<input type="text" required></label>
-        <label>Email<input type="email" required></label>
-        <label>Message<textarea rows="4" required></textarea></label>
-        <button class="btn-primary">Submit</button>
-      </form>
+      <form class="contact-form" action="https://formsubmit.co/dfcspp25@gmail.com" method="POST">
+
+  <label for="name">Name</label>
+  <input id="name" type="text" name="name" required>
+
+  <label for="email">Email</label>
+  <input id="email" type="email" name="email" required>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="4" required></textarea>
+
+  <!-- Optional: Prevent spam bots -->
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Optional: Redirect to a thank-you page -->
+  <input type="hidden" name="_next" value="https://YOURDOMAIN.com/thankyou.html">
+
+  <button class="btn-primary">Submit</button>
+</form>
     </div>
 
   </div>
