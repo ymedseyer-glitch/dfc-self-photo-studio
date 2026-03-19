@@ -413,6 +413,17 @@ img {
   gap: 1rem;
 }
 
+@media (min-width: 769px) {
+  .contact-form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+}
+
 .contact-form label {
   font-weight: 600;
 }

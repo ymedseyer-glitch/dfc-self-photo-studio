@@ -69,14 +69,17 @@
   <label for="email">Email</label>
   <input id="email" type="email" name="email" required>
 
+  <label for="phone">Cellphone Number</label>
+  <input id="phone" type="text" name="phone" required>
+
   <label for="message">Message</label>
   <textarea id="message" name="message" rows="4" required></textarea>
 
-  <!-- Optional: Prevent spam bots -->
+  <!-- Optional: Disable captcha -->
   <input type="hidden" name="_captcha" value="false">
 
-  <!-- Optional: Redirect to a thank-you page -->
-  <input type="hidden" name="_next" value="https://YOURDOMAIN.com/thankyou.html">
+  <!-- Optional: Redirect after submit -->
+  <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thankyou.html"> -->
 
   <button class="btn-primary">Submit</button>
 </form>
