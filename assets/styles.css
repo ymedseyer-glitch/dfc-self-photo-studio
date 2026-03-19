@@ -79,10 +79,11 @@ img {
   }
 }
 
-.nav a.active,
-.nav a:hover {
+.nav a.active {
   background: var(--gold);
-  color: var(--white);
+  color: white;
+  border-radius: var(--radius);
+  padding: 0.4rem 0.8rem;
 }
 
 /* Desktop default */
