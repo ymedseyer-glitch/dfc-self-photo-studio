@@ -6,69 +6,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/styles.css">
 
-  <!-- SIMPLE CAROUSEL STYLES -->
   <style>
-    .carousel {
-      width: 100%;
+    /* --- MAIN CAROUSEL --- */
+    .carousel-container {
       max-width: 1100px;
       margin: 2rem auto;
+      position: relative;
       overflow: hidden;
       border-radius: var(--radius);
-      position: relative;
+      height: 600px;
     }
 
     .carousel-track {
       display: flex;
+      height: 100%;
       transition: transform 0.6s ease;
     }
 
-    .carousel img {
+    .carousel-track img {
       width: 100%;
+      height: 600px;
+      object-fit: cover;
       flex-shrink: 0;
+      cursor: pointer;
+    }
+
+    /* --- THUMBNAILS --- */
+    .thumbs-container {
+      max-width: 1100px;
+      margin: 1.5rem auto 3rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;
+    }
+
+    .thumbs-container img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: var(--radius);
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    /* Hover Zoom + Shadow (Option C) */
+    .thumbs-container img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    }
+
+    /* --- LIGHTBOX --- */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.9);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      visibility: hidden;
+      opacity: 0;
+      transition: 0.3s ease;
+      z-index: 9999;
+    }
+
+    .lightbox.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
       border-radius: var(--radius);
     }
 
-    .carousel-dots {
-      text-align: center;
-      margin-top: 0.8rem;
-    }
-
-    .carousel-dots span {
-      display: inline-block;
-      width: 10px;
-      height: 10px;
-      background: #ccc;
-      border-radius: 50%;
-      margin: 0 5px;
+    /* Lightbox navigation arrows */
+    .lightbox-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 3rem;
+      color: white;
       cursor: pointer;
-      transition: 0.3s;
+      padding: 1rem;
+      user-select: none;
     }
 
-    .carousel-dots .active {
-      background: var(--gold);
-    }
+    .arrow-left { left: 20px; }
+    .arrow-right { right: 20px; }
 
-    /* Fade-in animation for gallery grid */
-    .gallery-grid img {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeInUp 0.8s ease forwards;
-    }
-
-    .gallery-grid img:nth-child(odd) {
-      animation-delay: 0.1s;
-    }
-
-    .gallery-grid img:nth-child(even) {
-      animation-delay: 0.2s;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
   </style>
 </head>
 
@@ -87,94 +113,89 @@
   </nav>
 </header>
 
-<!-- FEATURED CAROUSEL -->
-<div class="carousel">
+<!-- MAIN CAROUSEL -->
+<div class="carousel-container">
   <div class="carousel-track" id="carouselTrack">
-    <img src="assets/images/gallery1.jpg" alt="">
-    <img src="assets/images/gallery2.jpg" alt="">
-    <img src="assets/images/gallery3.jpg" alt="">
-    <img src="assets/images/gallery4.jpg" alt="">
+    <!-- 64 images -->
+    <img src="assets/images/gallery1.jpg">
+    <img src="assets/images/gallery2.jpg">
+    <img src="assets/images/gallery3.jpg">
+    <img src="assets/images/gallery4.jpg">
+    <img src="assets/images/gallery5.jpg">
+    <img src="assets/images/gallery6.jpg">
+    <img src="assets/images/gallery7.jpg">
+    <img src="assets/images/gallery8.jpg">
+    <img src="assets/images/gallery9.jpg">
+    <img src="assets/images/gallery10.jpg">
+    <img src="assets/images/gallery11.jpg">
+    <img src="assets/images/gallery12.jpg">
+    <img src="assets/images/gallery13.jpg">
+    <img src="assets/images/gallery14.jpg">
+    <img src="assets/images/gallery15.jpg">
+    <img src="assets/images/gallery16.jpg">
+    <img src="assets/images/gallery17.jpg">
+    <img src="assets/images/gallery18.jpg">
+    <img src="assets/images/gallery19.jpg">
+    <img src="assets/images/gallery20.jpg">
+    <img src="assets/images/gallery21.jpg">
+    <img src="assets/images/gallery22.jpg">
+    <img src="assets/images/gallery23.jpg">
+    <img src="assets/images/gallery24.jpg">
+    <img src="assets/images/gallery25.jpg">
+    <img src="assets/images/gallery26.jpg">
+    <img src="assets/images/gallery27.jpg">
+    <img src="assets/images/gallery28.jpg">
+    <img src="assets/images/gallery29.jpg">
+    <img src="assets/images/gallery30.jpg">
+    <img src="assets/images/gallery31.jpg">
+    <img src="assets/images/gallery32.jpg">
+    <img src="assets/images/gallery33.jpg">
+    <img src="assets/images/gallery34.jpg">
+    <img src="assets/images/gallery35.jpg">
+    <img src="assets/images/gallery36.jpg">
+    <img src="assets/images/gallery37.jpg">
+    <img src="assets/images/gallery38.jpg">
+    <img src="assets/images/gallery39.jpg">
+    <img src="assets/images/gallery40.jpg">
+    <img src="assets/images/gallery41.jpg">
+    <img src="assets/images/gallery42.jpg">
+    <img src="assets/images/gallery43.jpg">
+    <img src="assets/images/gallery44.jpg">
+    <img src="assets/images/gallery45.jpg">
+    <img src="assets/images/gallery46.jpg">
+    <img src="assets/images/gallery47.jpg">
+    <img src="assets/images/gallery48.jpg">
+    <img src="assets/images/gallery49.jpg">
+    <img src="assets/images/gallery50.jpg">
+    <img src="assets/images/gallery51.jpg">
+    <img src="assets/images/gallery52.jpg">
+    <img src="assets/images/gallery53.jpg">
+    <img src="assets/images/gallery54.jpg">
+    <img src="assets/images/gallery55.jpg">
+    <img src="assets/images/gallery56.jpg">
+    <img src="assets/images/gallery57.jpg">
+    <img src="assets/images/gallery58.jpg">
+    <img src="assets/images/gallery59.jpg">
+    <img src="assets/images/gallery60.jpg">
+    <img src="assets/images/gallery61.jpg">
+    <img src="assets/images/gallery62.jpg">
+    <img src="assets/images/gallery63.jpg">
+    <img src="assets/images/gallery64.jpg">
   </div>
 </div>
 
-<div class="carousel-dots" id="carouselDots">
-  <span data-slide="0" class="active"></span>
-  <span data-slide="1"></span>
-  <span data-slide="2"></span>
-  <span data-slide="3"></span>
+<!-- THUMBNAILS -->
+<div class="thumbs-container" id="thumbsContainer">
+  <!-- Same 64 images -->
+  <!-- I’ll generate them dynamically in JS -->
 </div>
 
-<section class="section light">
-  <div class="gallery-grid">
-
-    <!-- Your 64 images -->
-    <img src="assets/images/gallery1.jpg" alt="">
-    <img src="assets/images/gallery2.jpg" alt="">
-    <img src="assets/images/gallery3.jpg" alt="">
-    <img src="assets/images/gallery4.jpg" alt="">
-    <img src="assets/images/gallery5.jpg" alt="">
-    <img src="assets/images/gallery6.jpg" alt="">
-    <img src="assets/images/gallery7.jpg" alt="">
-    <img src="assets/images/gallery8.jpg" alt="">
-    <img src="assets/images/gallery9.jpg" alt="">
-    <img src="assets/images/gallery10.jpg" alt="">
-    <img src="assets/images/gallery11.jpg" alt="">
-    <img src="assets/images/gallery12.jpg" alt="">
-    <img src="assets/images/gallery13.jpg" alt="">
-    <img src="assets/images/gallery14.jpg" alt="">
-    <img src="assets/images/gallery15.jpg" alt="">
-    <img src="assets/images/gallery16.jpg" alt="">
-    <img src="assets/images/gallery17.jpg" alt="">
-    <img src="assets/images/gallery18.jpg" alt="">
-    <img src="assets/images/gallery19.jpg" alt="">
-    <img src="assets/images/gallery20.jpg" alt="">
-    <img src="assets/images/gallery21.jpg" alt="">
-    <img src="assets/images/gallery22.jpg" alt="">
-    <img src="assets/images/gallery23.jpg" alt="">
-    <img src="assets/images/gallery24.jpg" alt="">
-    <img src="assets/images/gallery25.jpg" alt="">
-    <img src="assets/images/gallery26.jpg" alt="">
-    <img src="assets/images/gallery27.jpg" alt="">
-    <img src="assets/images/gallery28.jpg" alt="">
-    <img src="assets/images/gallery29.jpg" alt="">
-    <img src="assets/images/gallery30.jpg" alt="">
-    <img src="assets/images/gallery31.jpg" alt="">
-    <img src="assets/images/gallery32.jpg" alt="">
-    <img src="assets/images/gallery33.jpg" alt="">
-    <img src="assets/images/gallery34.jpg" alt="">
-    <img src="assets/images/gallery35.jpg" alt="">
-    <img src="assets/images/gallery36.jpg" alt="">
-    <img src="assets/images/gallery37.jpg" alt="">
-    <img src="assets/images/gallery38.jpg" alt="">
-    <img src="assets/images/gallery39.jpg" alt="">
-    <img src="assets/images/gallery40.jpg" alt="">
-    <img src="assets/images/gallery41.jpg" alt="">
-    <img src="assets/images/gallery42.jpg" alt="">
-    <img src="assets/images/gallery43.jpg" alt="">
-    <img src="assets/images/gallery44.jpg" alt="">
-    <img src="assets/images/gallery45.jpg" alt="">
-    <img src="assets/images/gallery46.jpg" alt="">
-    <img src="assets/images/gallery47.jpg" alt="">
-    <img src="assets/images/gallery48.jpg" alt="">
-    <img src="assets/images/gallery49.jpg" alt="">
-    <img src="assets/images/gallery50.jpg" alt="">
-    <img src="assets/images/gallery51.jpg" alt="">
-    <img src="assets/images/gallery52.jpg" alt="">
-    <img src="assets/images/gallery53.jpg" alt="">
-    <img src="assets/images/gallery54.jpg" alt="">
-    <img src="assets/images/gallery55.jpg" alt="">
-    <img src="assets/images/gallery56.jpg" alt="">
-    <img src="assets/images/gallery57.jpg" alt="">
-    <img src="assets/images/gallery58.jpg" alt="">
-    <img src="assets/images/gallery59.jpg" alt="">
-    <img src="assets/images/gallery60.jpg" alt="">
-    <img src="assets/images/gallery61.jpg" alt="">
-    <img src="assets/images/gallery62.jpg" alt="">
-    <img src="assets/images/gallery63.jpg" alt="">
-    <img src="assets/images/gallery64.jpg" alt="">
-
-  </div>
-</section>
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-arrow arrow-left" id="lightboxPrev">&#10094;</span>
+  <img id="lightboxImg">
+  <span class="lightbox-arrow arrow-right" id="lightboxNext">&#10095;</span>
+</div>
 
 <footer class="site-footer">
   <p>© <span id="year"></span> DFC Self-Photo Studio. All rights reserved.</p>
@@ -183,29 +204,63 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 
-  // SIMPLE CAROUSEL SCRIPT
   const track = document.getElementById("carouselTrack");
-  const dots = document.querySelectorAll("#carouselDots span");
+  const thumbsContainer = document.getElementById("thumbsContainer");
+  const images = track.querySelectorAll("img");
   let currentSlide = 0;
 
+  /* Generate thumbnails */
+  images.forEach((img, index) => {
+    const thumb = document.createElement("img");
+    thumb.src = img.src;
+    thumb.addEventListener("click", () => goToSlide(index));
+    thumbsContainer.appendChild(thumb);
+  });
+
+  /* Carousel movement */
   function goToSlide(slide) {
     currentSlide = slide;
     track.style.transform = `translateX(-${slide * 100}%)`;
-    dots.forEach(dot => dot.classList.remove("active"));
-    dots[slide].classList.add("active");
   }
 
-  dots.forEach(dot => {
-    dot.addEventListener("click", () => {
-      goToSlide(parseInt(dot.dataset.slide));
-    });
-  });
-
-  // Auto-slide every 4 seconds
+  /* Auto-slide */
   setInterval(() => {
-    currentSlide = (currentSlide + 1) % dots.length;
+    currentSlide = (currentSlide + 1) % images.length;
     goToSlide(currentSlide);
   }, 4000);
+
+  /* Lightbox */
+  const lightbox = document.getElementById("lightbox");
+  const lightboxImg = document.getElementById("lightboxImg");
+
+  images.forEach((img, index) => {
+    img.addEventListener("click", () => openLightbox(index));
+  });
+
+  function openLightbox(index) {
+    currentSlide = index;
+    lightboxImg.src = images[index].src;
+    lightbox.classList.add("active");
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove("active");
+  }
+
+  lightbox.addEventListener("click", closeLightbox);
+
+  /* Lightbox navigation */
+  document.getElementById("lightboxPrev").addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentSlide = (currentSlide - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentSlide].src;
+  });
+
+  document.getElementById("lightboxNext").addEventListener("click", (e) => {
+    e.stopPropagation();
+    currentSlide = (currentSlide + 1) % images.length;
+    lightboxImg.src = images[currentSlide].src;
+  });
 </script>
 
 </body>
