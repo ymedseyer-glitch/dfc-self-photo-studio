@@ -5,6 +5,71 @@
   <title>Gallery | DFC Self-Photo Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="assets/styles.css">
+
+  <!-- SIMPLE CAROUSEL STYLES -->
+  <style>
+    .carousel {
+      width: 100%;
+      max-width: 1100px;
+      margin: 2rem auto;
+      overflow: hidden;
+      border-radius: var(--radius);
+      position: relative;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    .carousel img {
+      width: 100%;
+      flex-shrink: 0;
+      border-radius: var(--radius);
+    }
+
+    .carousel-dots {
+      text-align: center;
+      margin-top: 0.8rem;
+    }
+
+    .carousel-dots span {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: #ccc;
+      border-radius: 50%;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .carousel-dots .active {
+      background: var(--gold);
+    }
+
+    /* Fade-in animation for gallery grid */
+    .gallery-grid img {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .gallery-grid img:nth-child(odd) {
+      animation-delay: 0.1s;
+    }
+
+    .gallery-grid img:nth-child(even) {
+      animation-delay: 0.2s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -22,84 +87,93 @@
   </nav>
 </header>
 
-<section class="hero small-hero" style="background-image:url('https://images.unsplash.com/photo-1517841905240-472988babdf9');">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Gallery</h1>
-    <p>A peek into the moments created at DFC.</p>
+<!-- FEATURED CAROUSEL -->
+<div class="carousel">
+  <div class="carousel-track" id="carouselTrack">
+    <img src="assets/images/gallery1.jpg" alt="">
+    <img src="assets/images/gallery2.jpg" alt="">
+    <img src="assets/images/gallery3.jpg" alt="">
+    <img src="assets/images/gallery4.jpg" alt="">
   </div>
-</section>
+</div>
+
+<div class="carousel-dots" id="carouselDots">
+  <span data-slide="0" class="active"></span>
+  <span data-slide="1"></span>
+  <span data-slide="2"></span>
+  <span data-slide="3"></span>
+</div>
 
 <section class="section light">
   <div class="gallery-grid">
 
-  <!-- 64 images -->
-  <img src="assets/images/gallery1.jpg" alt="">
-  <img src="assets/images/gallery2.jpg" alt="">
-  <img src="assets/images/gallery3.jpg" alt="">
-  <img src="assets/images/gallery4.jpg" alt="">
-  <img src="assets/images/gallery5.jpg" alt="">
-  <img src="assets/images/gallery6.jpg" alt="">
-  <img src="assets/images/gallery7.jpg" alt="">
-  <img src="assets/images/gallery8.jpg" alt="">
-  <img src="assets/images/gallery9.jpg" alt="">
-  <img src="assets/images/gallery10.jpg" alt="">
-  <img src="assets/images/gallery11.jpg" alt="">
-  <img src="assets/images/gallery12.jpg" alt="">
-  <img src="assets/images/gallery13.jpg" alt="">
-  <img src="assets/images/gallery14.jpg" alt="">
-  <img src="assets/images/gallery15.jpg" alt="">
-  <img src="assets/images/gallery16.jpg" alt="">
-  <img src="assets/images/gallery17.jpg" alt="">
-  <img src="assets/images/gallery18.jpg" alt="">
-  <img src="assets/images/gallery19.jpg" alt="">
-  <img src="assets/images/gallery20.jpg" alt="">
-  <img src="assets/images/gallery21.jpg" alt="">
-  <img src="assets/images/gallery22.jpg" alt="">
-  <img src="assets/images/gallery23.jpg" alt="">
-  <img src="assets/images/gallery24.jpg" alt="">
-  <img src="assets/images/gallery25.jpg" alt="">
-  <img src="assets/images/gallery26.jpg" alt="">
-  <img src="assets/images/gallery27.jpg" alt="">
-  <img src="assets/images/gallery28.jpg" alt="">
-  <img src="assets/images/gallery29.jpg" alt="">
-  <img src="assets/images/gallery30.jpg" alt="">
-  <img src="assets/images/gallery31.jpg" alt="">
-  <img src="assets/images/gallery32.jpg" alt="">
-  <img src="assets/images/gallery33.jpg" alt="">
-  <img src="assets/images/gallery34.jpg" alt="">
-  <img src="assets/images/gallery35.jpg" alt="">
-  <img src="assets/images/gallery36.jpg" alt="">
-  <img src="assets/images/gallery37.jpg" alt="">
-  <img src="assets/images/gallery38.jpg" alt="">
-  <img src="assets/images/gallery39.jpg" alt="">
-  <img src="assets/images/gallery40.jpg" alt="">
-  <img src="assets/images/gallery41.jpg" alt="">
-  <img src="assets/images/gallery42.jpg" alt="">
-  <img src="assets/images/gallery43.jpg" alt="">
-  <img src="assets/images/gallery44.jpg" alt="">
-  <img src="assets/images/gallery45.jpg" alt="">
-  <img src="assets/images/gallery46.jpg" alt="">
-  <img src="assets/images/gallery47.jpg" alt="">
-  <img src="assets/images/gallery48.jpg" alt="">
-  <img src="assets/images/gallery49.jpg" alt="">
-  <img src="assets/images/gallery50.jpg" alt="">
-  <img src="assets/images/gallery51.jpg" alt="">
-  <img src="assets/images/gallery52.jpg" alt="">
-  <img src="assets/images/gallery53.jpg" alt="">
-  <img src="assets/images/gallery54.jpg" alt="">
-  <img src="assets/images/gallery55.jpg" alt="">
-  <img src="assets/images/gallery56.jpg" alt="">
-  <img src="assets/images/gallery57.jpg" alt="">
-  <img src="assets/images/gallery58.jpg" alt="">
-  <img src="assets/images/gallery59.jpg" alt="">
-  <img src="assets/images/gallery60.jpg" alt="">
-  <img src="assets/images/gallery61.jpg" alt="">
-  <img src="assets/images/gallery62.jpg" alt="">
-  <img src="assets/images/gallery63.jpg" alt="">
-  <img src="assets/images/gallery64.jpg" alt="">
+    <!-- Your 64 images -->
+    <img src="assets/images/gallery1.jpg" alt="">
+    <img src="assets/images/gallery2.jpg" alt="">
+    <img src="assets/images/gallery3.jpg" alt="">
+    <img src="assets/images/gallery4.jpg" alt="">
+    <img src="assets/images/gallery5.jpg" alt="">
+    <img src="assets/images/gallery6.jpg" alt="">
+    <img src="assets/images/gallery7.jpg" alt="">
+    <img src="assets/images/gallery8.jpg" alt="">
+    <img src="assets/images/gallery9.jpg" alt="">
+    <img src="assets/images/gallery10.jpg" alt="">
+    <img src="assets/images/gallery11.jpg" alt="">
+    <img src="assets/images/gallery12.jpg" alt="">
+    <img src="assets/images/gallery13.jpg" alt="">
+    <img src="assets/images/gallery14.jpg" alt="">
+    <img src="assets/images/gallery15.jpg" alt="">
+    <img src="assets/images/gallery16.jpg" alt="">
+    <img src="assets/images/gallery17.jpg" alt="">
+    <img src="assets/images/gallery18.jpg" alt="">
+    <img src="assets/images/gallery19.jpg" alt="">
+    <img src="assets/images/gallery20.jpg" alt="">
+    <img src="assets/images/gallery21.jpg" alt="">
+    <img src="assets/images/gallery22.jpg" alt="">
+    <img src="assets/images/gallery23.jpg" alt="">
+    <img src="assets/images/gallery24.jpg" alt="">
+    <img src="assets/images/gallery25.jpg" alt="">
+    <img src="assets/images/gallery26.jpg" alt="">
+    <img src="assets/images/gallery27.jpg" alt="">
+    <img src="assets/images/gallery28.jpg" alt="">
+    <img src="assets/images/gallery29.jpg" alt="">
+    <img src="assets/images/gallery30.jpg" alt="">
+    <img src="assets/images/gallery31.jpg" alt="">
+    <img src="assets/images/gallery32.jpg" alt="">
+    <img src="assets/images/gallery33.jpg" alt="">
+    <img src="assets/images/gallery34.jpg" alt="">
+    <img src="assets/images/gallery35.jpg" alt="">
+    <img src="assets/images/gallery36.jpg" alt="">
+    <img src="assets/images/gallery37.jpg" alt="">
+    <img src="assets/images/gallery38.jpg" alt="">
+    <img src="assets/images/gallery39.jpg" alt="">
+    <img src="assets/images/gallery40.jpg" alt="">
+    <img src="assets/images/gallery41.jpg" alt="">
+    <img src="assets/images/gallery42.jpg" alt="">
+    <img src="assets/images/gallery43.jpg" alt="">
+    <img src="assets/images/gallery44.jpg" alt="">
+    <img src="assets/images/gallery45.jpg" alt="">
+    <img src="assets/images/gallery46.jpg" alt="">
+    <img src="assets/images/gallery47.jpg" alt="">
+    <img src="assets/images/gallery48.jpg" alt="">
+    <img src="assets/images/gallery49.jpg" alt="">
+    <img src="assets/images/gallery50.jpg" alt="">
+    <img src="assets/images/gallery51.jpg" alt="">
+    <img src="assets/images/gallery52.jpg" alt="">
+    <img src="assets/images/gallery53.jpg" alt="">
+    <img src="assets/images/gallery54.jpg" alt="">
+    <img src="assets/images/gallery55.jpg" alt="">
+    <img src="assets/images/gallery56.jpg" alt="">
+    <img src="assets/images/gallery57.jpg" alt="">
+    <img src="assets/images/gallery58.jpg" alt="">
+    <img src="assets/images/gallery59.jpg" alt="">
+    <img src="assets/images/gallery60.jpg" alt="">
+    <img src="assets/images/gallery61.jpg" alt="">
+    <img src="assets/images/gallery62.jpg" alt="">
+    <img src="assets/images/gallery63.jpg" alt="">
+    <img src="assets/images/gallery64.jpg" alt="">
 
-</div>
+  </div>
 </section>
 
 <footer class="site-footer">
@@ -108,6 +182,30 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
+
+  // SIMPLE CAROUSEL SCRIPT
+  const track = document.getElementById("carouselTrack");
+  const dots = document.querySelectorAll("#carouselDots span");
+  let currentSlide = 0;
+
+  function goToSlide(slide) {
+    currentSlide = slide;
+    track.style.transform = `translateX(-${slide * 100}%)`;
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[slide].classList.add("active");
+  }
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      goToSlide(parseInt(dot.dataset.slide));
+    });
+  });
+
+  // Auto-slide every 4 seconds
+  setInterval(() => {
+    currentSlide = (currentSlide + 1) % dots.length;
+    goToSlide(currentSlide);
+  }, 4000);
 </script>
 
 </body>
