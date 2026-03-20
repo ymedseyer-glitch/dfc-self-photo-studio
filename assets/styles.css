@@ -484,10 +484,14 @@ img {
 }
 
 .hero-section {
-  background-image: url('images/gallery-hero.jpg'); /* Replace with actual path */
+  background-image: url('images/gallery-hero.jpg'); /* or .jpg */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+
+  /* NEW — matches homepage background */
+  background-color: var(--peach);
+
   height: 500px;
   position: relative;
   display: flex;
@@ -512,4 +516,8 @@ img {
 .hero-subtitle {
   font-size: 1.25rem;
   opacity: 0.9;
+}
+
+.site-header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
