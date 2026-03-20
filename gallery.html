@@ -24,38 +24,38 @@
     }
 
     .carousel-track img {
-  width: 100%;
-  height: 600px;
-  object-fit: contain; /* show full image */
-  background: #000;    /* clean backdrop for portrait photos */
-  flex-shrink: 0;
-  cursor: pointer;
-}
+      width: 100%;
+      height: 600px;
+      object-fit: contain;
+      background: #000;
+      flex-shrink: 0;
+      cursor: pointer;
+    }
 
-#backToTop {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: var(--gold);
-  color: white;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  display: none; /* hidden by default */
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-  transition: 0.3s ease;
-  z-index: 999;
-}
+    #backToTop {
+      position: fixed;
+      bottom: 25px;
+      right: 25px;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: var(--gold);
+      color: white;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      transition: 0.3s ease;
+      z-index: 999;
+    }
 
-#backToTop:hover {
-  transform: scale(1.1);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
-}
+    #backToTop:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+    }
 
     /* --- THUMBNAILS --- */
     .thumbs-container {
@@ -75,7 +75,6 @@
       transition: 0.3s ease;
     }
 
-    /* Hover Zoom + Shadow (Option C) */
     .thumbs-container img:hover {
       transform: scale(1.05);
       box-shadow: 0 8px 20px rgba(0,0,0,0.25);
@@ -106,7 +105,6 @@
       border-radius: var(--radius);
     }
 
-    /* Lightbox navigation arrows */
     .lightbox-arrow {
       position: absolute;
       top: 50%;
@@ -120,7 +118,6 @@
 
     .arrow-left { left: 20px; }
     .arrow-right { right: 20px; }
-
   </style>
 </head>
 
@@ -139,82 +136,89 @@
   </nav>
 </header>
 
-<!-- MAIN CAROUSEL -->
-<div class="carousel-container">
-  <div class="carousel-track" id="carouselTrack">
-    <!-- 64 images -->
-    <img src="assets/images/gallery1.jpg">
-    <img src="assets/images/gallery2.jpg">
-    <img src="assets/images/gallery3.jpg">
-    <img src="assets/images/gallery4.jpg">
-    <img src="assets/images/gallery5.jpg">
-    <img src="assets/images/gallery6.jpg">
-    <img src="assets/images/gallery7.jpg">
-    <img src="assets/images/gallery8.jpg">
-    <img src="assets/images/gallery9.jpg">
-    <img src="assets/images/gallery10.jpg">
-    <img src="assets/images/gallery11.jpg">
-    <img src="assets/images/gallery12.jpg">
-    <img src="assets/images/gallery13.jpg">
-    <img src="assets/images/gallery14.jpg">
-    <img src="assets/images/gallery15.jpg">
-    <img src="assets/images/gallery16.jpg">
-    <img src="assets/images/gallery17.jpg">
-    <img src="assets/images/gallery18.jpg">
-    <img src="assets/images/gallery19.jpg">
-    <img src="assets/images/gallery20.jpg">
-    <img src="assets/images/gallery21.jpg">
-    <img src="assets/images/gallery22.jpg">
-    <img src="assets/images/gallery23.jpg">
-    <img src="assets/images/gallery24.jpg">
-    <img src="assets/images/gallery25.jpg">
-    <img src="assets/images/gallery26.jpg">
-    <img src="assets/images/gallery27.jpg">
-    <img src="assets/images/gallery28.jpg">
-    <img src="assets/images/gallery29.jpg">
-    <img src="assets/images/gallery30.jpg">
-    <img src="assets/images/gallery31.jpg">
-    <img src="assets/images/gallery32.jpg">
-    <img src="assets/images/gallery33.jpg">
-    <img src="assets/images/gallery34.jpg">
-    <img src="assets/images/gallery35.jpg">
-    <img src="assets/images/gallery36.jpg">
-    <img src="assets/images/gallery37.jpg">
-    <img src="assets/images/gallery38.jpg">
-    <img src="assets/images/gallery39.jpg">
-    <img src="assets/images/gallery40.jpg">
-    <img src="assets/images/gallery41.jpg">
-    <img src="assets/images/gallery42.jpg">
-    <img src="assets/images/gallery43.jpg">
-    <img src="assets/images/gallery44.jpg">
-    <img src="assets/images/gallery45.jpg">
-    <img src="assets/images/gallery46.jpg">
-    <img src="assets/images/gallery47.jpg">
-    <img src="assets/images/gallery48.jpg">
-    <img src="assets/images/gallery49.jpg">
-    <img src="assets/images/gallery50.jpg">
-    <img src="assets/images/gallery51.jpg">
-    <img src="assets/images/gallery52.jpg">
-    <img src="assets/images/gallery53.jpg">
-    <img src="assets/images/gallery54.jpg">
-    <img src="assets/images/gallery55.jpg">
-    <img src="assets/images/gallery56.jpg">
-    <img src="assets/images/gallery57.jpg">
-    <img src="assets/images/gallery58.jpg">
-    <img src="assets/images/gallery59.jpg">
-    <img src="assets/images/gallery60.jpg">
-    <img src="assets/images/gallery61.jpg">
-    <img src="assets/images/gallery62.jpg">
-    <img src="assets/images/gallery63.jpg">
-    <img src="assets/images/gallery64.jpg">
-  </div>
-</div>
+<!-- TOP SECTION (PEACH) -->
+<section class="section peach">
+  <h2 class="section-title">Gallery</h2>
+  <p class="section-subtitle">Explore moments captured inside our studio.</p>
+</section>
 
-<!-- THUMBNAILS -->
-<div class="thumbs-container" id="thumbsContainer">
-  <!-- Same 64 images -->
-  <!-- I’ll generate them dynamically in JS -->
-</div>
+<!-- MAIN CAROUSEL (WHITE SECTION) -->
+<section class="section light">
+  <div class="carousel-container">
+    <div class="carousel-track" id="carouselTrack">
+
+      <!-- 64 images -->
+      <img src="assets/images/gallery1.jpg">
+      <img src="assets/images/gallery2.jpg">
+      <img src="assets/images/gallery3.jpg">
+      <img src="assets/images/gallery4.jpg">
+      <img src="assets/images/gallery5.jpg">
+      <img src="assets/images/gallery6.jpg">
+      <img src="assets/images/gallery7.jpg">
+      <img src="assets/images/gallery8.jpg">
+      <img src="assets/images/gallery9.jpg">
+      <img src="assets/images/gallery10.jpg">
+      <img src="assets/images/gallery11.jpg">
+      <img src="assets/images/gallery12.jpg">
+      <img src="assets/images/gallery13.jpg">
+      <img src="assets/images/gallery14.jpg">
+      <img src="assets/images/gallery15.jpg">
+      <img src="assets/images/gallery16.jpg">
+      <img src="assets/images/gallery17.jpg">
+      <img src="assets/images/gallery18.jpg">
+      <img src="assets/images/gallery19.jpg">
+      <img src="assets/images/gallery20.jpg">
+      <img src="assets/images/gallery21.jpg">
+      <img src="assets/images/gallery22.jpg">
+      <img src="assets/images/gallery23.jpg">
+      <img src="assets/images/gallery24.jpg">
+      <img src="assets/images/gallery25.jpg">
+      <img src="assets/images/gallery26.jpg">
+      <img src="assets/images/gallery27.jpg">
+      <img src="assets/images/gallery28.jpg">
+      <img src="assets/images/gallery29.jpg">
+      <img src="assets/images/gallery30.jpg">
+      <img src="assets/images/gallery31.jpg">
+      <img src="assets/images/gallery32.jpg">
+      <img src="assets/images/gallery33.jpg">
+      <img src="assets/images/gallery34.jpg">
+      <img src="assets/images/gallery35.jpg">
+      <img src="assets/images/gallery36.jpg">
+      <img src="assets/images/gallery37.jpg">
+      <img src="assets/images/gallery38.jpg">
+      <img src="assets/images/gallery39.jpg">
+      <img src="assets/images/gallery40.jpg">
+      <img src="assets/images/gallery41.jpg">
+      <img src="assets/images/gallery42.jpg">
+      <img src="assets/images/gallery43.jpg">
+      <img src="assets/images/gallery44.jpg">
+      <img src="assets/images/gallery45.jpg">
+      <img src="assets/images/gallery46.jpg">
+      <img src="assets/images/gallery47.jpg">
+      <img src="assets/images/gallery48.jpg">
+      <img src="assets/images/gallery49.jpg">
+      <img src="assets/images/gallery50.jpg">
+      <img src="assets/images/gallery51.jpg">
+      <img src="assets/images/gallery52.jpg">
+      <img src="assets/images/gallery53.jpg">
+      <img src="assets/images/gallery54.jpg">
+      <img src="assets/images/gallery55.jpg">
+      <img src="assets/images/gallery56.jpg">
+      <img src="assets/images/gallery57.jpg">
+      <img src="assets/images/gallery58.jpg">
+      <img src="assets/images/gallery59.jpg">
+      <img src="assets/images/gallery60.jpg">
+      <img src="assets/images/gallery61.jpg">
+      <img src="assets/images/gallery62.jpg">
+      <img src="assets/images/gallery63.jpg">
+      <img src="assets/images/gallery64.jpg">
+
+    </div>
+  </div>
+
+  <!-- THUMBNAILS -->
+  <div class="thumbs-container" id="thumbsContainer"></div>
+</section>
 
 <!-- LIGHTBOX -->
 <div class="lightbox" id="lightbox">
@@ -242,11 +246,7 @@
 
     thumb.addEventListener("click", () => {
       goToSlide(index);
-
-      // Pause auto-slide when selecting a thumbnail
       clearInterval(autoSlide);
-
-      // Smooth scroll to the carousel
       document.querySelector(".carousel-container").scrollIntoView({
         behavior: "smooth",
         block: "start"
@@ -256,13 +256,11 @@
     thumbsContainer.appendChild(thumb);
   });
 
-  /* Carousel movement */
   function goToSlide(slide) {
     currentSlide = slide;
     track.style.transform = `translateX(-${slide * 100}%)`;
   }
 
-  /* Auto-slide */
   function nextSlide() {
     currentSlide = (currentSlide + 1) % images.length;
     goToSlide(currentSlide);
@@ -282,21 +280,16 @@
     currentSlide = index;
     lightboxImg.src = images[index].src;
     lightbox.classList.add("active");
-
-    // Pause auto-slide while zoomed
     clearInterval(autoSlide);
   }
 
   function closeLightbox() {
     lightbox.classList.remove("active");
-
-    // Resume auto-slide after closing zoom
     autoSlide = setInterval(nextSlide, 4000);
   }
 
   lightbox.addEventListener("click", closeLightbox);
 
-  /* Lightbox navigation */
   document.getElementById("lightboxPrev").addEventListener("click", (e) => {
     e.stopPropagation();
     currentSlide = (currentSlide - 1 + images.length) % images.length;
@@ -308,27 +301,6 @@
     currentSlide = (currentSlide + 1) % images.length;
     lightboxImg.src = images[currentSlide].src;
   });
-
-  /* Back to Top button */
-const backToTop = document.getElementById("backToTop");
-
-// Show button when scrolling down
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 400) {
-    backToTop.style.display = "flex";
-  } else {
-    backToTop.style.display = "none";
-  }
-});
-
-// Scroll to top when clicked
-backToTop.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  });
-});
-
 </script>
 
 </body>
