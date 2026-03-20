@@ -226,19 +226,24 @@ img {
 ------------------------------ */
 
 /* GALLERY PAGE */
-.gallery-hero {
-  background-image: url('assets/images/gallery-hero.jpg');
+..gallery-hero {
+  background-image: url('../images/gallery-hero.jpg');
 }
 
 /* SERVICES PAGE */
 .services-hero {
-  background-image: url('assets/images/services-hero.png');
+  background-image: url('../images/services-hero.png');
 }
 
 /* ABOUT PAGE */
 .about-hero {
-  background-image: url('assets/images/about-hero.png');
+  background-image: url('../images/about-hero.png');
 }
+
+.hero {
+  background-image: url('../images/dfchero.png');
+}
+
 
 /* ------------------------------
    BUTTONS
