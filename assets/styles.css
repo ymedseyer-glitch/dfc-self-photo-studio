@@ -482,3 +482,34 @@ img {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+
+.hero-section {
+  background-image: url('assets/images/gallery-hero.jpg'); /* Replace with actual path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  text-align: center;
+  color: white;
+  background: rgba(0,0,0,0.3); /* Optional: soft overlay for readability */
+  padding: 2rem;
+  border-radius: var(--radius);
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}
