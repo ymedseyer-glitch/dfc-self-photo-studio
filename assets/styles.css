@@ -450,3 +450,35 @@ img {
   background-position: center !important;
   height: 60vh; /* adjust as needed */
 }
+
+.services-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background: var(--peach);
+}
+
+.services-hero .hero-left img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  object-fit: contain;
+}
+
+.services-hero .hero-right {
+  text-align: left;
+  padding-right: 2rem;
+}
+
+.services-hero .hero-right h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.services-hero .hero-right p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
