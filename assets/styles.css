@@ -484,7 +484,7 @@ img {
 }
 
 .hero-section {
-  background-image: url('assets/images/gallery-hero.jpg'); /* Replace with actual path */
+  background-image: url('assets/images/gallery-hero.png'); /* Replace with actual path */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
