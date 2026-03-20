@@ -226,7 +226,7 @@ img {
 ------------------------------ */
 
 /* GALLERY PAGE */
-..gallery-hero {
+.gallery-hero {
   background-image: url('../images/gallery-hero.jpg');
 }
 
