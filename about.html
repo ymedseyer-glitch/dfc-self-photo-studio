@@ -7,6 +7,12 @@
   <link rel="stylesheet" href="assets/styles.css">
 
   <style>
+    /* PAGE BACKGROUND */
+    body {
+      background: var(--peach);
+    }
+
+    /* WRAPPER */
     .about-wrapper {
       max-width: 900px;
       margin: 3rem auto;
@@ -17,6 +23,18 @@
     .about-wrapper h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    /* GOLD ACCENT UNDER TITLE */
+    .about-wrapper h1::after {
+      content: "";
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--gold);
+      margin: 0.8rem auto 0;
+      border-radius: 2px;
     }
 
     .about-wrapper h2 {
@@ -26,14 +44,20 @@
       margin-bottom: 2.5rem;
     }
 
-    /* CARD STYLE SECTIONS */
+    /* CARD STYLE */
     .about-card {
-      background: #fff;
+      background: var(--white);
       padding: 2.5rem;
       margin-bottom: 2rem;
       border-radius: var(--radius);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      box-shadow: var(--shadow);
       text-align: center;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .about-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 14px 35px rgba(0,0,0,0.12);
     }
 
     .about-card h3 {
@@ -46,6 +70,7 @@
       line-height: 1.7;
     }
 
+    /* LIST INSIDE CARDS */
     .about-list {
       text-align: left;
       max-width: 700px;
@@ -61,7 +86,7 @@
       color: var(--gold);
     }
 
-    /* Optional photo strip */
+    /* OPTIONAL PHOTO STRIP */
     .photo-strip {
       display: flex;
       justify-content: center;
