@@ -443,3 +443,10 @@ img {
   margin-top: 0.5rem;
   align-self: flex-start;
 }
+
+.full-image-hero {
+  background-size: contain !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  height: 60vh; /* adjust as needed */
+}
