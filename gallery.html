@@ -214,7 +214,15 @@
   images.forEach((img, index) => {
     const thumb = document.createElement("img");
     thumb.src = img.src;
-    thumb.addEventListener("click", () => goToSlide(index));
+    thumb.addEventListener("click", () => {
+  goToSlide(index);
+
+  // Smooth scroll to the carousel
+  document.querySelector(".carousel-container").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+});
     thumbsContainer.appendChild(thumb);
   });
 
