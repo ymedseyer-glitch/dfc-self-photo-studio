@@ -7,37 +7,43 @@
   <link rel="stylesheet" href="assets/styles.css">
 
   <style>
-    .about-container {
+    .about-wrapper {
       max-width: 900px;
       margin: 3rem auto;
       padding: 0 1rem;
       text-align: center;
-      line-height: 1.7;
     }
 
-    .about-container h1 {
+    .about-wrapper h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
 
-    .about-container h2 {
+    .about-wrapper h2 {
       font-size: 1.4rem;
       font-weight: 400;
       color: var(--gold);
       margin-bottom: 2.5rem;
     }
 
-    .about-section {
-      margin-bottom: 3rem;
+    /* CARD STYLE SECTIONS */
+    .about-card {
+      background: #fff;
+      padding: 2.5rem;
+      margin-bottom: 2rem;
+      border-radius: var(--radius);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+      text-align: center;
     }
 
-    .about-section h3 {
+    .about-card h3 {
       font-size: 1.8rem;
       margin-bottom: 1rem;
     }
 
-    .about-section p {
+    .about-card p {
       margin-bottom: 1rem;
+      line-height: 1.7;
     }
 
     .about-list {
@@ -55,7 +61,7 @@
       color: var(--gold);
     }
 
-    /* Optional small photo strip placeholder */
+    /* Optional photo strip */
     .photo-strip {
       display: flex;
       justify-content: center;
@@ -86,13 +92,13 @@
   </nav>
 </header>
 
-<div class="about-container">
+<div class="about-wrapper">
 
   <h1>ABOUT DFC SELF‑PHOTO STUDIO</h1>
   <h2>Fun. Creative. 100% You.</h2>
 
-  <!-- WHO WE ARE -->
-  <div class="about-section">
+  <!-- CARD 1: WHO WE ARE -->
+  <div class="about-card">
     <h3>😄 Who We Are</h3>
     <p>
       DFC Self‑Photo Studio is a cozy, creative space where you can laugh, pose, experiment,
@@ -108,8 +114,8 @@
     </p>
   </div>
 
-  <!-- WHAT MAKES US FUN -->
-  <div class="about-section">
+  <!-- CARD 2: WHAT MAKES US FUN -->
+  <div class="about-card">
     <h3>📸 What Makes Us Fun</h3>
 
     <div class="about-list">
@@ -120,8 +126,8 @@
     </div>
   </div>
 
-  <!-- EXPERIENCE -->
-  <div class="about-section">
+  <!-- CARD 3: EXPERIENCE -->
+  <div class="about-card">
     <h3>🎬 Your Studio Experience</h3>
 
     <div class="about-list">
@@ -133,7 +139,6 @@
   </div>
 
   <!-- OPTIONAL PHOTO STRIP -->
-  <!-- Replace images when ready -->
   <!--
   <div class="photo-strip">
     <img src="assets/images/gallery1.jpg">
@@ -142,8 +147,8 @@
   </div>
   -->
 
-  <!-- PROMISE -->
-  <div class="about-section">
+  <!-- CARD 4: PROMISE -->
+  <div class="about-card">
     <h3>💛 Our Promise</h3>
     <p>
       We’re here to make sure you walk out with photos that feel like <em>you</em> —
