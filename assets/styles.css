@@ -416,8 +416,7 @@ img {
 
 @media (min-width: 769px) {
   .contact-form {
-    max-width: 450px;
-    margin: 0 auto;
+    width: 100%;
     padding: 2rem;
     background: #fff;
     border-radius: var(--radius);
