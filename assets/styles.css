@@ -554,3 +554,33 @@ img {
   background: rgba(0,0,0,0.3) !important;
 }
 
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    background: var(--white);
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}

@@ -100,12 +100,18 @@
   <a href="index.html" class="dfc-logo">
     <img src="assets/images/logo.png" alt="DFC Self-Photo Studio Logo">
   </a>
+
+  <button class="menu-toggle">☰</button>
+
   <nav class="nav">
     <a href="index.html">Home</a>
     <a href="gallery.html">Gallery</a>
-    <a href="about.html" class="active">About</a>
+    <a href="about.html">About</a>
     <a href="services.html">Services</a>
     <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
   </nav>
 </header>
 
@@ -174,6 +180,16 @@
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
+
+<script>
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector(".nav");
+
+  menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+</script>
+
 
 </body>
 </html>
