@@ -511,6 +511,17 @@ img {
   padding: 0 1rem;
 }
 
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .two-column > div {
+    padding: 0;
+  }
+}
+
 /* ------------------------------
    BACK TO TOP BUTTON (if used)
 ------------------------------ */
@@ -543,13 +554,3 @@ img {
   background: rgba(0,0,0,0.3) !important;
 }
 
-@media (max-width: 768px) {
-  .two-column {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .two-column > div {
-    padding: 0;
-  }
-}
