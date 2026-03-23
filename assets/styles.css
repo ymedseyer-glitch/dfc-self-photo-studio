@@ -542,3 +542,14 @@ img {
 .services-hero .hero-overlay {
   background: rgba(0,0,0,0.3) !important;
 }
+
+@media (max-width: 768px) {
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .two-column > div {
+    padding: 0;
+  }
+}
